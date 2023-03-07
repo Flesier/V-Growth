@@ -1029,6 +1029,10 @@ header .navbar-default .navbar-header {
 	7. FOOTER
 -------------------------------------------------------------*/
 
+footer{
+  margin-bottom: -6%;
+}
+
 .main-footer {
   background-image: url("../images/footer_bg.png");
   padding: 55px 0px 0px 0px;

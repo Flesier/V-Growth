@@ -20,6 +20,7 @@
       <link rel="stylesheet" href="css/responsive.css">
        <!--favicon image-->
     <link rel="icon" type="images/x-icon" href="./images/V-Growth logo.jpg">
+    <link rel="shortcut icon" href="./Image(Fave)/photo_5766874192480943047_x (1).jpg" type="image/x-icon">
       <style>
          body {
             background-color: azure;
@@ -42,7 +43,8 @@
             margin-bottom: 10px;
             font-weight: bold;
          }
-         input[type="text"], input[type="email"], input[type="password"], input [type="text"] {
+         /* input[type="text"], input[type="email"], input[type="password"], input [type="text"]*/
+         .border1 {
             display: block;
             width: 100%;
             padding: 5px;
@@ -100,7 +102,7 @@
                         <div class="login-sr">
                            <div class="login-signup">
                               <ul>
-                                 <li><a href="account.html">Login</a></li>
+                                 <li><a href="#login-section">Login</a></li>
                                  <li><a class="custom-b" href="account.html">Sign up</a></li>
                               </ul>
                            </div>
@@ -108,7 +110,7 @@
                         <div class="help-r hidden-xs">
                            <div class="help-box">
                               <ul>
-                                 <li> <a data-toggle="modal" data-target="#myModal" href="#"> <span>Change</span> <img src="images/flag.png" alt="" /> </a> </li>
+                                 <li> <a data-toggle="modal" data-target="#myModal" href="#"> <span>Change</span> <img style="height: 25px;" src="./images/nigeria Flag.png" alt="" /> </a> </li>
                                  <li> <a href="#"><img class="h-i" src="images/help-icon.png" alt="" /> Help </a> </li>
                               </ul>
                            </div>
@@ -131,21 +133,35 @@
       <!-- Modal -->
       <div class="modal fade lug" id="myModal" role="dialog">
          <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Change</h4>
-               </div>
-               <div class="modal-body">
-                  <ul>
-                     <li><a href="#"><img src="images/flag-up-1.png" alt="" /> United States</a></li>
-                     <li><a href="#"><img src="images/flag-up-2.png" alt="" /> France </a></li>
-                  </ul>
-               </div>
-            </div>
+           <!-- Modal content-->
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">
+                 &times;
+               </button>
+               <h4 class="modal-title">Change</h4>
+             </div>
+             <div class="modal-body">
+               <ul>
+                 <li>
+                   <a href="#"
+                     ><img src="./images/nigeria Flag.png" alt="" /> Nigeria</a
+                   >
+                 </li>
+                 <li>
+                   <a href="#"><img src="./images/Kenya.png" alt="" /> Kenya </a>
+                 </li>
+                 <li>
+                   <a href="#"
+                     ><img src="./images/South Africa.png" alt="" />
+                     South Africa
+                   </a>
+                 </li>
+               </ul>
+             </div>
+           </div>
          </div>
-      </div>
+       </div>
       <div id="sidebar" class="top-nav">
          <ul id="sidebar-nav" class="sidebar-nav">
             <li><a href="#">Help</a></li>
@@ -157,16 +173,16 @@
          <h1>Sign Up</h1>
          <form>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input class="border1" type="text" id="name" name="name" required>
 
             <label for="phone_no">Phone Number:</label>
-            <input type="text" id="phone_no" name="phone_no" required>
+            <input class="border1" type="text" id="phone_no" name="phone_no" required>
    
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input class="border1" type="email" id="email" name="email" required>
    
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input class="border1" type="password" id="password" name="password" required>
 
             <label for="sex">Sex:</label>
             <select name="sex" id="sex" required>
@@ -174,145 +190,158 @@
                 <option value="Female">Female</option>
             </select><br>
 
-            <label for="account">Account type:</label>
+            <label id="login-section" for="account">Account type:</label>
             <select name="account" id="account" required>
                 <option value="Buyer" checked>Buyer</option>
                 <option value="Seller">Seller</option>
             </select><br>
-   
             <button type="submit">Sign Up</button>
-         </form>
-         <br>
-         <h1>OR</h1><br>
-         <h2>Login</h2><br>
-         <form>
+          </form >
+         <br >
+          <h1 >OR</h1><br>
+         <h2 >Login</h2><br>
+         <form >
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input class="border1" type="text" id="username" name="username" required>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input class="border1" type="password" id="password" name="password" required>
             <button type="submit">Login</button>
          </form>
       </div>
    </body>
-      <footer>
-         <div class="main-footer">
-            <div class="container">
-               <div class="row">
-                  <div class="footer-top clearfix">
-                     <div class="col-md-2 col-sm-6">
-                        <h2>Start a free
-                           account today
-                        </h2>
-                     </div>
-                     <div class="col-md-6 col-sm-6">
-                        <div class="form-box">
-                           <input type="text" placeholder="Enter your e-mail" />
-                           <button>Continue</button>
-                        </div>
-                     </div>
-                     <div class="col-md-4 col-sm-12">
-                        <div class="help-box-f">
-                           <h4>Question? Call us on 12 34 56 78 for help</h4>
-                           <p>Easy setup - no payment fees - up to 100 products for free</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="footer-link-box clearfix">
-                     <div class="col-md-6 col-sm-6">
-                        <div class="left-f-box">
-                           <div class="col-sm-4">
-                              <h2>SELL ON V-Growth</h2>
-                              <ul>
-                                 <li><a href="account.html">Create account</a></li>
-                                 <li><a href="howitworks.html">How it works suppliers</a></li>
-                                 <li><a href="howitworks.html">FAQ for Suppliers</a></li>
-                              </ul>
-                           </div>
-                           <div class="col-sm-4">
-                              <h2>BUY ON V-Growth</h2>
-                              <ul>
-                                 <li><a href="account.html">Create account</a></li>
-                                 <li><a href="howitworks.html">How it works buyers</a></li>
-                                 <li><a href="category.html">Categories</a></li>
-                                 <li><a href="howitworks.html">FAQ for buyers</a></li>
-                              </ul>
-                           </div>
-                           <div class="col-sm-4">
-                              <h2>COMPANY</h2>
-                              <ul>
-                                 <li><a href="about-us.html">About V-Growth</a></li>
-                                 <li><a href="#">Contact us</a></li>
-                                 <li><a href="cms.html">Pay Tax</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-6 col-sm-6">
-                        <div class="right-f-box">
-                           <h2>INDUSTRIES</h2>
-                           <ul class="col-sm-4">
-                              <li><a href="#">Textiles</a></li>
-                              <li><a href="#">Furniture</a></li>
-                              <li><a href="#">Leather</a></li>
-                              <li><a href="#">Agriculture</a></li>
-                              <li><a href="#">Food & drinks</a></li>
-                           </ul>
-                           <ul class="col-sm-4">
-                              <li><a href="#">Fashion</a></li>
-                              <li><a href="#">Decoratives</a></li>
-                              <li><a href="#">Electronics</a></li>
-                              <li><a href="#">Machines</a></li>
-                              <li><a href="#">Building</a></li>
-                           </ul>
-                           <ul class="col-sm-4">
-                              <li><a href="#">Cosmetics</a></li>
-                              <li><a href="#">Health</a></li>
-                              <li><a href="#">Jewelry</a></li>
-                              <li><a href="#">See all here</a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+   <footer>
+      <div class="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-top clearfix">
+              <div class="col-md-2 col-sm-6">
+                <h2>Start a free account today</h2>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="form-box">
+                  <input type="text" placeholder="Enter your e-mail" />
+                  <button>Continue</button>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div class="help-box-f">
+                  <h4 style="width: 400px;">Question? Call us on +2348100604030 for help</h4>
+                  <p>
+                    Easy setup - no payment fees - up to 100 products for free
+                  </p>
+                </div>
+              </div>
             </div>
-         </div>
-         <div class="copyright">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-8">
-                     <p><img width="90" src="/images/v-logo 2.jpg" alt="#" style="margin-top: -5px;" /> All Rights Reserved. V-Growth © 2023</p>
+            <div class="footer-link-box clearfix">
+              <div class="col-md-6 col-sm-6">
+                <div class="left-f-box">
+                  <div class="col-sm-4">
+                    <h2>SELL ON V-GROWTH</h2>
+                    <ul>
+                      <li><a href="account.html">Create account</a></li>
+                      <li>
+                        <a href="howitworks.html">How it works suppliers</a>
+                      </li>
+                      <li><a href="/howitworks.html#QandA">FAQ for Suppliers</a></li>
+                    </ul>
                   </div>
-                  <div class="col-md-4">
-                     <ul class="list-inline socials">
-                        <li>
-                           <a href="">
-                           <i class="fa fa-facebook" aria-hidden="true"></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="">
-                           <i class="fa fa-twitter" aria-hidden="true"></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="">
-                           <i class="fa fa-instagram" aria-hidden="true"></i>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#">
-                           <i class="fa fa-linkedin" aria-hidden="true"></i>
-                           </a>
-                        </li>
-                     </ul>
-                     <ul class="right-flag">
-                        <li><a href="#"><img src="/images/flag.png" alt="" /> <span>Change</span></a></li>
-                     </ul>
+                  <div class="col-sm-4">
+                    <h2>BUY ON V-GROWTH</h2>
+                    <ul>
+                      <li><a href="account.html">Create account</a></li>
+                      <li><a href="howitworks.html">How it works buyers</a></li>
+                      <!-- <li><a href="category.html">Categories</a></li> -->
+                      <li><a href="/howitworks.html#QandA">FAQ for buyers</a></li>
+                    </ul>
                   </div>
+                  <div class="col-sm-4">
+                    <h2>COMPANY</h2>
+                    <ul>
+                      <li><a href="about-us.html">About V-Growth</a></li>
+                      <li><a href="#">Contact us</a></li>
+                      <!-- <li><a href="#">Careers</a></li> -->
+                      <li><a href="cms.html">Pay Tax</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="right-f-box">
+                  <h2>CATEGORIES</h2>
+                  <ul class="col-sm-4">
+                     <li><a href="supermarket.html">Supermarket</a></li>
+                     <li><a href="health-beauty.html">Health & Beauty</a></li>
+                     <li><a href="home-office.html">Home & Office</a></li>
+                     <li><a href="phones-computing.html">Phones & Computing</a></li>
+                  </ul>
+                  <ul class="col-sm-4">
+                   
+                     <li><a href="pharmaceuticals.html">Pharmaceuticals</a></li>
+                     <li><a href="electronics.html">Electronics</a></li>
+                     <li><a href="fashion.html">Fashion</a></li>
+                  </ul>
+                  <ul class="col-sm-4">
+                    
+                     <li><a href="baby-products.html">Baby Products</a></li>
+                     <li><a href="gaming.html">Gaming</a></li>
+                     <li><a href="automobile.html">Automobile</a></li>
+                  </ul>
                </div>
+              </div>
             </div>
-         </div>
-      </footer>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <p>
+                <img
+                  width="90"
+                  src="images/v-logo 2.jpg"
+                  alt="#"
+                  style="margin-top: -5px"
+                />
+                All Rights Reserved. V-Growth © 2023
+              </p>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-inline socials">
+                <li>
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+              <ul class="right-flag">
+                <li>
+                  <a href="#">
+                    <!-- <img src="images/flag.png" alt="" />  -->
+                    <img style="height: 35px;" src="./images/nigeria Flag.png" alt="" /> <span>Change</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
       <!--main js--> 
       <script src="js/jquery-1.12.4.min.js"></script> 
       <!--bootstrap js--> 

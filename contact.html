@@ -22,11 +22,7 @@
     <link rel="icon" type="images/x-icon" href="./images/V-Growth logo.jpg">
     <link rel="shortcut icon" href="./Image(Fave)/photo_5766874192480943047_x (1).jpg" type="image/x-icon">
       <style>
-         body {
-            background-color: azure;
-            font-family: Arial, sans-serif;
-         }
-         .containe {
+        .containe {
             background-color: white;
             padding: 20px;
             border-radius: 5px;
@@ -38,41 +34,39 @@
             text-align: center;
             margin-top: 0;
          }
-         label {
-            display:block;
-            margin-bottom: 10px;
-            font-weight: bold;
-         }
-         /* input[type="text"], input[type="email"], input[type="password"], input [type="text"]*/
-         .border1 {
-            display: block;
-            width: 100%;
-            padding: 5px;
-            border-radius: 10px;
-            border: 1px solid;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-            font-size: 16px;
-         }
-         select {
-            display: block;
-            width: 50%;
-            padding: 7px;
-            border-radius: 10px;
+         form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
 
-         }
-         button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-         }
-         button:hover {
-            background-color: #3e8e41;
-         }
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
       </style>
    </head>
    <body>
@@ -170,43 +164,23 @@
          </ul>
       </div>
       <div class="containe">
-         <h1>Sign Up</h1>
-         <form>
+         <h1>Contact Us</h1>
+         <form action="" method="post">
             <label for="name">Name:</label>
-            <input class="border1" type="text" id="name" name="name" required>
-
-            <label for="phone_no">Phone Number:</label>
-            <input class="border1" type="text" id="phone_no" name="phone_no" required>
-   
+            <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+          
             <label for="email">Email:</label>
-            <input class="border1" type="email" id="email" name="email" required>
-   
-            <label for="password">Password:</label>
-            <input class="border1" type="password" id="password" name="password" required>
-
-            <label for="sex">Sex:</label>
-            <select name="sex" id="sex" required>
-                <option value="Male" checked>Male</option>
-                <option value="Female">Female</option>
-            </select><br>
-
-            <label id="login-section" for="account">Account type:</label>
-            <select name="account" id="account" required>
-                <option value="Buyer" checked>Buyer</option>
-                <option value="Seller">Seller</option>
-            </select><br>
-            <button type="submit">Sign Up</button>
-          </form >
+            <input type="email" id="email" name="user_email" placeholder="Enter your email" required>
+          
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="user_phone" placeholder="Enter your phone number" required>
+          
+            <label for="message">Message:</label>
+            <textarea id="message" name="user_message" placeholder="Enter your message" required></textarea>
+          
+            <input type="submit" value="Submit">
+          </form>
          <br >
-          <h1 >OR</h1><br>
-         <h2 >Login</h2><br>
-         <form >
-            <label for="username">Username:</label>
-            <input class="border1" type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input class="border1" type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
-         </form>
       </div>
    </body>
    <footer>
@@ -220,7 +194,7 @@
               <div class="col-md-6 col-sm-6">
                 <div class="form-box">
                   <input type="text" placeholder="Enter your e-mail" />
-                  <button>Continue</button>
+                  <button style="margin-top: 5px;">Continue</button>
                 </div>
               </div>
               <div class="col-md-4 col-sm-12">
